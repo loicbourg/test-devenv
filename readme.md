@@ -28,6 +28,17 @@ trusted-users = root <your-user>
 nix profile install --accept-flake-config nixpkgs#devenv
 ```
 
+ensuite lancer
+sur mac
+```
+sudo launchctl kickstart -k system/org.nixos.nix-daemon
+```
+
+sur linux
+```
+sudo systemctl restart nix-daemon
+```
+
 ## Utilisation
 
 Toute la configuration se fait depuis devenv.nix
